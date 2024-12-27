@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './pages/login';
 import Header from './components/layouts/header';
 import Sidebar from './components/layouts/sidebar';
-import AboutUs from './components/layouts/list';
-
+import AboutUs from './components/aboutus/list';
+import WhoEditPage from './components/aboutus/whoWeAre/edit';
+import '../src/styles/common.css';
 
 function App() {
   return (
@@ -18,6 +19,16 @@ function App() {
                         <Header />
                         <Sidebar />
                         <AboutUs />
+                        
+                    </>
+               } 
+        />
+        <Route path="/who-we-are" 
+               element={
+                    <>
+                        <Header />
+                        <Sidebar />
+                        <WhoEditPage />
                         
                     </>
                } 

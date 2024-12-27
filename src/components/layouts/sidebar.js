@@ -53,7 +53,6 @@ const Sidebar = () => {
     );
 };
 
-<AboutUs />
 const SubMenu = ({ mainMenu, subMenuArray }) => {
     const location = useLocation();
     const parentId = mainMenu.id;
